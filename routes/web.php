@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('/halaman-satu', function(){
     return view('halaman satu');
-});
+}); 
