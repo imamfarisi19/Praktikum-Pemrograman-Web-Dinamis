@@ -12,10 +12,10 @@
         <form action="#" method="POST">
             {{ csrf_field() }}
             <div>
-                <input type="text" id="nama" name="nama" placeholder="Nama Mahasiswa">
+                <input type="text" id="nama" name="nama" placeholder="Nama Mahasiswa" value="{{ $dtMhs->nama }}">
             </div>
             <div>
-                <input type="text" id="alamat" name="alamat" placeholder="Alamat Mahasiswa">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat Mahasiswa" value="{{ $dtMhs->alamat }}">
             </div>
             <div>
                 <button type="submit">Ubah</button>
