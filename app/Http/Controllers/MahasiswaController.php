@@ -6,8 +6,9 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        //
-    }
+        $dtMhs = Mahasiswa::all();
+        return view('Data-mahasiswa',compact('dtMhs'));
+    } 
     public function create()
     {
         return view('Create-mahasiswa');
