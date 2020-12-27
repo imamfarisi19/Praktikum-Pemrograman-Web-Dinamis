@@ -18,11 +18,13 @@
                 <th style="30%">Nama</th>
                 <th style="50%">Alamat</th>
             </tr>
+            @foreach ($dtMhs as $item)
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $item->nama }}</td>
+                <td>{{ $item->alamat }}</td>
             </tr>
+            @endforeach 
         </table>
     </div>
 </body>
