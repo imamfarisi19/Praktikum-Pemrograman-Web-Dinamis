@@ -17,12 +17,19 @@
                 <th style="1%">#</th>
                 <th style="30%">Nama</th>
                 <th style="50%">Alamat</th>
+                <th style="5%">Aksi</th>
             </tr>
             @foreach ($dtMhs as $item)
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->nama }}</td>
                 <td>{{ $item->alamat }}</td>
+                <td>
+                    <a href="{{ url('edit-mahasiswa',$item->id)}}">Edit</a>
+                </td>
+                <td>
+                    <a href="#">Hapus</a>
+                </td>
             </tr>
             @endforeach 
         </table>
