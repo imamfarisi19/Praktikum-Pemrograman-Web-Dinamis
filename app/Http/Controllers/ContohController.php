@@ -8,6 +8,7 @@ class ContohController extends Controller
 {
     public function index()
     {
-        return view('halaman-satu');
+        $varNama = "Imam Farisi";
+        return view('halaman-satu',compact('varNama'));
     }
 }
