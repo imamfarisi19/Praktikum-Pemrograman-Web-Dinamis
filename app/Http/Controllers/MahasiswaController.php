@@ -30,14 +30,16 @@ class MahasiswaController extends Controller
 
     public function edit($id)
     {
-        $dtMhs = Mahasiswa::findorfall($id);
+        $dtMhs = Mahasiswa::findorfail($id);
         return view('Edit-mahasiswa',compact('dtMhs'));
     }
-
+    
     public function update(Request $request, $id)
-    {
-        //
-    }
+    { 
+        $dtMhs = Mahasiswa::findorfail($id);
+        $dtMhs->update ($request->all());
+        return redirect('data-mahasiswa');
+    } 
 
     public function destroy($id)
     {
