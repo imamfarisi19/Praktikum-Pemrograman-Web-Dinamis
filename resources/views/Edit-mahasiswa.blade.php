@@ -9,7 +9,7 @@
 <body>
     <div>Ubah Data Mahasiswa</div>
     <div>
-        <form action="#" method="POST">
+        <form action="{{ url('update-mahasiswa',$dtMhs) }}" method="POST">
             {{ csrf_field() }}
             <div>
                 <input type="text" id="nama" name="nama" placeholder="Nama Mahasiswa" value="{{ $dtMhs->nama }}">
