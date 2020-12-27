@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContohController;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,4 @@ Route::get('/', function () {
 }); 
 
 Route::get('halaman-satu',[ContohController::class,'index']);
-    
+Route::get('create-mahasiswa',[MahasiswaController::class,'create'])->name('create-mahasiswa');
