@@ -26,8 +26,7 @@
                 <td>{{ $item->alamat }}</td>
                 <td>
                     <a href="{{ url('edit-mahasiswa',$item->id)}}">Edit</a>
-                </td>
-                <td>
+                    |
                     <a href="#">Hapus</a>
                 </td>
             </tr>
