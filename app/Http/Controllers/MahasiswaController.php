@@ -43,6 +43,8 @@ class MahasiswaController extends Controller
 
     public function destroy($id)
     {
-        //
+        $dtMhs = Mahasiswa::findorfail($id);
+        $dtMhs->delete();
+        return back();
     }
 }
