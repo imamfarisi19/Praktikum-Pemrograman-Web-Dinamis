@@ -20,7 +20,7 @@ class MahasiswaController extends Controller
             'nama' => $request->nama,
             'alamat' => $request->alamat,
         ]);
-        return back();
+        return redirect('data-mahasiswa');
     }
 
     public function show($id)
