@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContohController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 }); 
 
-Route::get('/halaman-satu', function(){
-    return view('halaman-satu');
-}); 
+Route::get('halaman-satu',[ContohController::class,'index']);
+    
