@@ -22,3 +22,4 @@ Route::get('/', function () {
 Route::get('halaman-satu',[ContohController::class,'index']);
 Route::get('create-mahasiswa',[MahasiswaController::class,'create'])->name('create-mahasiswa');
 Route::post('simpan-mahasiswa',[MahasiswaController::class,'store'])->name('simpan-mahasiswa');
+Route::get('data-mahasiswa',[MahasiswaController::class,'index'])->name('data-mahasiswa');
