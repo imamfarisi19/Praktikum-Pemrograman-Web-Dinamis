@@ -9,7 +9,7 @@
 <body>
     <div>Tambah Data Mahasiswa</div>
     <div>
-        <form action="#" method="POST">
+        <form action="{{ route('simpan-mahasiswa') }}" method="POST">
         {{ csrf_field() }}
         <div>
             <input type="text" id="nama" name="nama" placeholder="Nama Mahasiswa">
