@@ -10,7 +10,7 @@
     <div>
         <h4>Data Mahasiswa</h4>
     </div>
-    <div><a href="">Tambah Data</a></div>
+    <div><a href="{{ route('create-mahasiswa') }}">Tambah Data</a></div>
     <div>
         <table border="1">
             <tr>
