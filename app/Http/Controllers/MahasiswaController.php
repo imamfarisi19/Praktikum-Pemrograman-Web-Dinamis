@@ -1,5 +1,7 @@
 <?php
 namespace App\Http\Controllers;
+
+use App\Mahasiswa;
 use Illuminate\Http\Request;
 class MahasiswaController extends Controller
 {
@@ -14,7 +16,11 @@ class MahasiswaController extends Controller
 
     public function store(Request $request)
     {
-        //
+        Mahasiswa::create([
+            'nama' => $request->nama,
+            'alamat' => $request->alamat,
+        ]);
+        return back();
     }
 
     public function show($id)
