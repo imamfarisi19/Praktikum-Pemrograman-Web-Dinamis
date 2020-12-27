@@ -27,7 +27,7 @@
                 <td>
                     <a href="{{ url('edit-mahasiswa',$item->id)}}">Edit</a>
                     |
-                    <a href="#">Hapus</a>
+                    <a href="{{ url('hapus-mahasiswa',$item->id)}}">Hapus</a>
                 </td>
             </tr>
             @endforeach 
