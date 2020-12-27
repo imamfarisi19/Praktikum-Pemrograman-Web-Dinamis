@@ -24,3 +24,4 @@ Route::get('create-mahasiswa',[MahasiswaController::class,'create'])->name('crea
 Route::post('simpan-mahasiswa',[MahasiswaController::class,'store'])->name('simpan-mahasiswa');
 Route::get('data-mahasiswa',[MahasiswaController::class,'index'])->name('data-mahasiswa');
 Route::get('edit-mahasiswa/{id}',[MahasiswaController::class,'edit'])->name('edit-mahasiswa');
+Route::post('update-mahasiswa/{id}',[MahasiswaController::class,'update'])->name('update-mahasiswa');
